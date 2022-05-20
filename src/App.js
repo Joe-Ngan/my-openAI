@@ -35,7 +35,7 @@ function App() {
 }
   return (
     <appContext.Provider value={state}>
-      <div className="App w-full min-h-screen py-20 px-40 bg-[url('https://picsum.photos/1600/900')]">
+      <div className="App w-full min-h-screen py-20 px-0 md:px-20 lg:px-40 bg-[url('https://picsum.photos/1600/900')]">
         {state.isLoading &&<Loading/>}
         <Interface handleChangeRobot={handleChangeRobot} handleFetchData={handleFetchData}/>
       </div>

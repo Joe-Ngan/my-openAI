@@ -17,7 +17,7 @@ const RobotList = ({ handleChangeRobot }) => {
         return showLastRecordMsg;
     }
   return (
-    <div className="bg-white w-6/12 p-2 border-r-2 border-r-gray-100">
+    <div className="bg-white w-5/12 md:1/12 lg:w-6/12 p-2 border-r-2 border-r-gray-100">
       <div className="flex bg-gray-200 rounded-lg mx-2 my-3 h-[40px] p-2 text-sm text-slate-700">
         <SearchIcon />
         &nbsp;Search
@@ -37,9 +37,9 @@ const RobotList = ({ handleChangeRobot }) => {
               <AndroidIcon />
             )}
           </div>
-          <div className="flex flex-col">
-            <div className="flex font-bold">{model}</div>
-            <div className="flex truncate">{showTheLastMsg(model)}</div>
+          <div className="hidden flex-col md:flex">
+            <div className=" font-bold hidden md:flex">{model}</div>
+            <div className=" truncate hidden lg:flex">{showTheLastMsg(model)}</div>
           </div>
         </div>
       ))}
