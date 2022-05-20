@@ -6,7 +6,7 @@ const SideBar = () => {
 
     
   return (
-    <div className="flex flex-col bg-blue-300/25 border-blue-300/30 rounded-l-lg backdrop-blur-sm">
+    <div className="hidden md:flex flex-col bg-blue-300/25 border-blue-300/30 rounded-l-lg backdrop-blur-sm">
         <div className="flex flex-row text-transparent pt-2 hover:text-gray-600 hover:cursor-pointer">
             <div className="bg-red-300 rounded-full flex w-[15px] h-[15px] items-center justify-center ml-1 mt-1">
                 <CloseIcon fontSize="small" className=""/>
